@@ -1,0 +1,16 @@
+[package]
+name = "ddns-cloudflare"
+version = "0.1.0"
+edition = "2018"
+description = "Dynamic DNS with Cloudflare API"
+
+[[bin]]
+name = "ddns-cloudflare"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.33"
+log = "0.4.8"
+env_logger = "0.7.1"
+cloudflare = "0.6.4"
+reqwest = "0.10.1"
